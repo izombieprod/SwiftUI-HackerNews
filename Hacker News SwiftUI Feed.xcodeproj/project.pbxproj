@@ -13,6 +13,10 @@
 		DBA3B5FF27519BEE00FFF373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA3B5FE27519BEE00FFF373 /* Assets.xcassets */; };
 		DBA3B60227519BEE00FFF373 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA3B60127519BEE00FFF373 /* Preview Assets.xcassets */; };
 		DBA3B60527519BEE00FFF373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA3B60327519BEE00FFF373 /* LaunchScreen.storyboard */; };
+		DBA3B60E2752465000FFF373 /* Network Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3B60D2752465000FFF373 /* Network Manager.swift */; };
+		DBA3B610275249D600FFF373 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3B60F275249D600FFF373 /* PostData.swift */; };
+		DBA3B61327527A0100FFF373 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3B61227527A0100FFF373 /* DetailView.swift */; };
+		DBA3B6152752815000FFF373 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA3B6142752815000FFF373 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		DBA3B60127519BEE00FFF373 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBA3B60427519BEE00FFF373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA3B60627519BEE00FFF373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA3B60D2752465000FFF373 /* Network Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Network Manager.swift"; sourceTree = "<group>"; };
+		DBA3B60F275249D600FFF373 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		DBA3B61227527A0100FFF373 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DBA3B6142752815000FFF373 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +66,8 @@
 			children = (
 				DBA3B5F827519BEA00FFF373 /* AppDelegate.swift */,
 				DBA3B5FA27519BEA00FFF373 /* SceneDelegate.swift */,
-				DBA3B5FC27519BEA00FFF373 /* ContentView.swift */,
+				DBA3B611275279ED00FFF373 /* Views */,
+				DBA3B60C2752463100FFF373 /* Models */,
 				DBA3B5FE27519BEE00FFF373 /* Assets.xcassets */,
 				DBA3B60327519BEE00FFF373 /* LaunchScreen.storyboard */,
 				DBA3B60627519BEE00FFF373 /* Info.plist */,
@@ -73,6 +82,25 @@
 				DBA3B60127519BEE00FFF373 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DBA3B60C2752463100FFF373 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3B60D2752465000FFF373 /* Network Manager.swift */,
+				DBA3B60F275249D600FFF373 /* PostData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBA3B611275279ED00FFF373 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DBA3B5FC27519BEA00FFF373 /* ContentView.swift */,
+				DBA3B61227527A0100FFF373 /* DetailView.swift */,
+				DBA3B6142752815000FFF373 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBA3B610275249D600FFF373 /* PostData.swift in Sources */,
+				DBA3B61327527A0100FFF373 /* DetailView.swift in Sources */,
 				DBA3B5F927519BEA00FFF373 /* AppDelegate.swift in Sources */,
+				DBA3B60E2752465000FFF373 /* Network Manager.swift in Sources */,
 				DBA3B5FB27519BEA00FFF373 /* SceneDelegate.swift in Sources */,
 				DBA3B5FD27519BEA00FFF373 /* ContentView.swift in Sources */,
+				DBA3B6152752815000FFF373 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
